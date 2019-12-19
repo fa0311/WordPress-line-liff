@@ -16,7 +16,7 @@ function initializeLiff(myLiffId) {
         });
 }
 window.onload = function (e) {
-initializeLiff("1614848598-b57oa4kO");
+initializeLiff("XXXXXXX-XXXXXX");
        const box = document.getElementById("liff-box");
         if(liff.isInClient()){
             box.style.display ="block";
