@@ -1,4 +1,7 @@
 # WordPress-line-liff
+
+【同じページに2個設置すると下が反映されないバグ有り】
+
 WordPressでlineのliffの使用できるようにするコード<br>
 WordPressのheader.phpにこのファイルのheader.phpを追加してください<br>
 WordPressのfunction.phpにこのファイルのfunction.phpを追加してください<br>
