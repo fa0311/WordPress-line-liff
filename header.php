@@ -1,7 +1,6 @@
-
 <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 <script>
-var i = 0;
+var line_liff_num = 0;
 function initializeLiff(myLiffId) {
     liff
         .init({
@@ -17,16 +16,16 @@ function initializeLiff(myLiffId) {
         });
 }
 window.onload = function (e) {
-	initializeLiff("1614848598-b57oa4kO");
-	var ii = 1;
-	while(ii <= i){
-		const box = document.getElementById("liff-box"+ii);
+	initializeLiff("XXXXXXXXXXXXXXXXXXXX-XXXXXXXX");
+	var line_liff_loop = 1;
+	while(line_liff_loop <= line_liff_num){
+		const box = document.getElementById("liff-box"+line_liff_loop);
 		 if(liff.isInClient()){
 			 box.style.display ="block";
 		 }else{
 			 box.style.display ="none";
 		 }
-		 ii ++;
+		 line_liff_loop ++;
 		}
 }
 
