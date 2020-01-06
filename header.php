@@ -1,6 +1,7 @@
+
 <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 <script>
-
+var i = 0;
 function initializeLiff(myLiffId) {
     liff
         .init({
@@ -16,23 +17,27 @@ function initializeLiff(myLiffId) {
         });
 }
 window.onload = function (e) {
-initializeLiff("XXXXXXX-XXXXXX");
-       const box = document.getElementById("liff-box");
-        if(liff.isInClient()){
-            box.style.display ="block";
-        }else{
-            box.style.display ="none";
-        }
+	initializeLiff("1614848598-b57oa4kO");
+	var ii = 1;
+	while(ii <= i){
+		const box = document.getElementById("liff-box"+ii);
+		 if(liff.isInClient()){
+			 box.style.display ="block";
+		 }else{
+			 box.style.display ="none";
+		 }
+		 ii ++;
+		}
 }
-    function send(text) {
-        liff.sendMessages([{
-            type: 'text',
-            text: text
-        }]).then(function () {
-            window.alert("送信しました");
-        }).catch(function (error) {
-            window.alert("送信エラーが発生しました: " + error);
-        });
-    }
 
+function send(text) {
+	liff.sendMessages([{
+		type: 'text',
+		text: text
+	}]).then(function () {
+		window.alert("送信しました");
+	}).catch(function (error) {
+		window.alert("送信エラーが発生しました: " + error);
+	});
+}
 </script>
